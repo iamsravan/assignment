@@ -9,3 +9,5 @@
 
 3. To execute task 3 run php cli or any server locally :
    Incase you have PHP the command is : `php -S localhost:8080`
+4. To execute task 4 run php cli or any server locally :
+   Incase you have PHP the command is : `php -S localhost:8080`

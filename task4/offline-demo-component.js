@@ -3,7 +3,7 @@ const OfflineDemoComponent = () => {
   const [content, setContent] = React.useState("");
   const buttonText = demoState ? "ON" : "OFF";
   const postToggleDemo = (demoState) => {
-    fetch(`http://localhost:8089/data/bigquery/search/toggleDemo`, {
+    fetch(`http://localhost:5000/data/bigquery/search/toggleDemo`, {
       method: "post",
       body: JSON.stringify({ isDemo: demoState }),
       headers: {
@@ -21,7 +21,7 @@ const OfflineDemoComponent = () => {
     postToggleDemo(demoState);
   }, []);
   const fetchData = () => {
-    fetch(`http://localhost:8089/data/bigquery/search/getOfflineData`, {
+    fetch(`http://localhost:5000/data/bigquery/search/getOfflineData`, {
       method: "post",
       body: JSON.stringify({
         elasticQueryName: "Department_tile_view",

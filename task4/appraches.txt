@@ -1,0 +1,4 @@
+1. queryString from the route and pass it to all API
+2. Have toggle button in UI - create a sample API which sets the demo flag in the json file --- My option would be this
+3. have the toggle button and update the flag in the redux store and modify the req payload.
+4. DB save can also be done - again depends on how big use this is going to be.
